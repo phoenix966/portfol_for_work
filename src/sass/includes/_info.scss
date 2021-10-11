@@ -1,0 +1,41 @@
+.info{
+    min-height: 86vh;
+    width: 100%;
+    background: 
+        url('../img/bg-1.webp') top center / cover,
+        rgba(85, 84, 84, 0.89);
+    background-blend-mode: multiply;
+    &__container{
+        padding-top: 35vh;
+    }
+    &__wrap{
+        width: 300px;
+        min-height: 200px;
+        text-align: center;
+        color: var(--color-text-light);
+        margin: 0 auto;
+    }
+    &__title{
+        position: relative;
+        font-family: var(--font-bold);
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: inherit;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -15px;
+            left: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 2px;
+            background: var(--color-accent);
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: inherit;
+        margin-bottom: 20px;
+    }
+}

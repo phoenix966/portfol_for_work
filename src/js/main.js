@@ -11,4 +11,5 @@
   let overlay = document.querySelector('.mobile__overlay');
   overlay.addEventListener('click',()=>{
     mobile.classList.toggle('mobile--hide');
+    hamburger.classList.toggle("is-active");
   })

@@ -41,3 +41,18 @@ p,h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
+.btn{
+    padding: 12px  30px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 14px;
+    border-radius: 6px;
+    background: var(--color-accent);
+    color: #fff;
+    transition: .5s;
+    &:hover{
+        background: var(--color-dark);
+    }
+}
