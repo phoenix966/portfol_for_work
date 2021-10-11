@@ -17,7 +17,7 @@ html{
 };
 body{
     min-width: 320px;
-    background-color: #fff;
+    background-color: var(--color-bg-light);
 };
 .wrapper{
     position: relative;
@@ -25,10 +25,19 @@ body{
     overflow: hidden;
 };
 .container{
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 5px;
+    @include media(728px){
+        padding: 0 15px;
+    }
 };
 p,h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
     padding: 0;
 };
+.list--reset{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
