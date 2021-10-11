@@ -6,7 +6,7 @@ const cleanCSS = require('gulp-clean-css'); // сжимает и оптимиз�
 const rename = require('gulp-rename');  // переименовывает
 const plumber = require('gulp-plumber'); // отлавливает ошибки
 const notify = require('gulp-notify'); // украшает ошибки
-const babel = require('gulp-babel'); // переводит js в старый синтаксис
+// const babel = require('gulp-babel'); // переводит js в старый синтаксис
 const uglify = require('gulp-uglify'); // сжимает js
 const include = require('gulp-include'); // позволяет исп вставку кода
 const browserSync = require('browser-sync').create(); // live для всех устройств
@@ -134,9 +134,9 @@ function scripts () { // работа с js файлами
         .pipe(include()) // подключает все файлы в один файл на выходе(можно использовать для js,html,css)
         .pipe(rename('original.js')) // переименовываем
         .pipe(gulp.dest(path.build.js))
-        .pipe(babel({ // конвертирует новый js синтаксис в старый понятный для любого браузера
-            presets: ['@babel/env'] // стандартный пресет
-        }))
+        // .pipe(babel({ // конвертирует новый js синтаксис в старый понятный для любого браузера
+        //     presets: ['@babel/env'] // стандартный пресет
+        // }))
         .pipe(uglify()) // сжимает js код
         .pipe(rename('build.min.js')) // переименовываем
         .pipe(gulp.dest(path.build.js))

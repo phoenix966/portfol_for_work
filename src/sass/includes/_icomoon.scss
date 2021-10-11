@@ -1,0 +1,88 @@
+@include font-icon('icomoon','icomoon');
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-link:before {
+    content: "\e900";
+  }
+  .icon-zoom:before {
+    content: "\e901";
+  }
+  .icon-circle-down:before {
+    content: "\e902";
+  }
+  .icon-circle-up:before {
+    content: "\e903";
+  }
+  .icon-mobile:before {
+    content: "\e904";
+  }
+  .icon-star-half:before {
+    content: "\e905";
+  }
+  .icon-star-full:before {
+    content: "\e906";
+  }
+  .icon-star-empty:before {
+    content: "\e907";
+  }
+  .icon-github:before {
+    content: "\e908";
+  }
+  .icon-telegram:before {
+    content: "\e909";
+  }
+  .icon-js:before {
+    content: "\e910";
+    color: #f7df1e;
+  }
+  .icon-jquery:before {
+    content: "\e90a";
+    color: #0769ad;
+  }
+  .icon-mysql:before {
+    content: "\e90b";
+    color: #4479a1;
+  }
+  .icon-whatsapp:before {
+    content: "\e90c";
+    color: #25d366;
+  }
+  .icon-gmail:before {
+    content: "\e90d";
+    color: #d14836;
+  }
+  .icon-telegram1:before {
+    content: "\e90e";
+    color: #2ca5e0;
+  }
+  .icon-php:before {
+    content: "\e90f";
+    color: #777bb4;
+  }
+  .icon-sass:before {
+    content: "\e911";
+    color: #c69;
+  }
+  .icon-gulp:before {
+    content: "\e912";
+    color: #da4648;
+  }
+  .icon-react:before {
+    content: "\e913";
+    color: #61dafb;
+  }
+  
