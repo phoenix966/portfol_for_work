@@ -1,5 +1,5 @@
 .info{
-    min-height: 86vh;
+    min-height: 87vh;
     width: 100%;
     background: 
         url('../img/bg-1.webp') top center / cover,
@@ -17,6 +17,7 @@
     }
     &__title{
         position: relative;
+        z-index: 1;
         font-family: var(--font-bold);
         font-size: 28px;
         text-transform: uppercase;
