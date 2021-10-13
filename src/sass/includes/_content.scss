@@ -30,34 +30,39 @@
         justify-content: center;
         flex-direction: column;
         border: 5px solid rgba(206, 206, 206, 0.212);
-        padding: 15px;
+        padding: 5px;
         border-radius: 10px;
+        width: 95px;
+        height: 115px;
     }
     &__text{
         font-family: var(--font-bold);
         font-size: 16px;
-        color: var(--color-accent);
+        color: #888;
     }
     &__icons{
         display: flex;
         padding-top: 35px;
     }
     &__icon{
-        font-size: 44px;
-        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        // padding-left: 5px;
         margin-bottom: 10px;
         &--colored{
             color: #555;
         }
         @include media(440px){
-            font-size: 64px;
+            font-size: 54px;
         }
     }
     &__rate{
         font-size: 28px;
-        color: rgba(255, 255, 0, 0.788);
+        color: var(--color-accent);
         @include media(440px){
-            font-size: 48px;
+            font-size: 38px;
         }
     }
 }
