@@ -1,7 +1,7 @@
 .content{
     min-height: 40vh;
     background: var(--color-text-light);
-    padding: 40px 0;
+    padding: 2.5rem 0;
     &__list{
         display: flex;
         justify-content: flex-start;
@@ -13,7 +13,7 @@
         flex: 1 1 50%;
         justify-content: center;
         align-items: flex-start;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
 
     }
     &__wrap{
@@ -21,7 +21,7 @@
         justify-content: flex-start;
         align-items: center;
         &:first-child{
-            margin-right: 20px;
+            margin-right: 1.25rem;
         }
     }
     &__col{
@@ -29,40 +29,39 @@
         align-content: center;
         justify-content: center;
         flex-direction: column;
-        border: 5px solid rgba(206, 206, 206, 0.212);
-        padding: 5px;
-        border-radius: 10px;
-        width: 95px;
-        height: 115px;
+        border: 0.3125rem solid rgba(206, 206, 206, 0.212);
+        padding: 0.3125rem;
+        border-radius: 0.625rem;
+        width: 5.9375rem;
+        height: 7.1875rem;
     }
     &__text{
         font-family: var(--font-bold);
-        font-size: 16px;
+        font-size: 1rem;
         color: #888;
     }
     &__icons{
         display: flex;
-        padding-top: 35px;
+        padding-top: 2.1875rem;
     }
     &__icon{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 42px;
-        // padding-left: 5px;
-        margin-bottom: 10px;
+        font-size: 2.625rem;
+        margin-bottom: 0.625rem;
         &--colored{
             color: #555;
         }
         @include media(440px){
-            font-size: 54px;
+            font-size: 3.375rem;
         }
     }
     &__rate{
-        font-size: 28px;
+        font-size: 1.75rem;
         color: var(--color-accent);
         @include media(440px){
-            font-size: 38px;
+            font-size: 2.375rem;
         }
     }
 }

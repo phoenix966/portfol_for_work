@@ -1,6 +1,8 @@
 .main{
     min-height: 20vh;
-    padding-top: 60px;
+    &--style{
+        margin-bottom: 2.5rem;
+    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -9,17 +11,24 @@
     }
     &__title{
         font-family: var(--font-bold);
-        font-size: 22px;
+        font-size: 1.375rem;
         color: var( --color-dark);
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
+        line-height: 1.75rem;
+        &--light{
+            color: var(--color-text-light);
+        }
     }
     &__text{
         font-family: var(--font-regular);
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--color-bright);
-        max-width: 700px;
-        margin-bottom: 40px;
-        line-height: 22px;
-        padding: 0 10px;
+        max-width: 43.75rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.375rem;
+        padding: 0 0.625rem;
+        &--light{
+            color: var(--color-text-light);
+        }
     }
 }

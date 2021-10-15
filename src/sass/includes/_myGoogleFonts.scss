@@ -4,7 +4,8 @@
 	font-weight: 400;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/googleFonts/Roboto-italic-400.woff) format('woff');
+	src: url(../fonts/googleFonts/Roboto-italic-400.woff) format('woff'),
+	 url(../fonts/googleFonts/Roboto-italic-400.woff2) format('woff2');
 }
 
 @font-face {
@@ -13,7 +14,8 @@
 	font-weight: 400;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/googleFonts/Roboto-normal-400.woff) format('woff');
+	src: url(../fonts/googleFonts/Roboto-normal-400.woff) format('woff'),
+	 url(../fonts/googleFonts/Roboto-normal-400.woff2) format('woff2');
 }
 
 @font-face {
@@ -22,6 +24,7 @@
 	font-weight: 700;
 	font-display: auto;
 	font-stretch: normal;
-	src: url(../fonts/googleFonts/Roboto-normal-700.woff) format('woff');
+	src: url(../fonts/googleFonts/Roboto-normal-700.woff) format('woff'),
+	url(../fonts/googleFonts/Roboto-normal-700.woff2) format('woff2');
 }
 

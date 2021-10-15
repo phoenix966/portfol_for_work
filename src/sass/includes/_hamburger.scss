@@ -1,5 +1,5 @@
 .hamburger {
-    padding: 15px 15px;
+    padding: 0.9375rem 0.9375rem;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -22,20 +22,20 @@
       background-color: var(--color-dark); }
   
   .hamburger-box {
-    width: 40px;
-    height: 24px;
+    width: 2.5rem;
+    height: 1.5rem;
     display: inline-block;
     position: relative; }
   
   .hamburger-inner {
     display: block;
     top: 50%;
-    margin-top: -2px; }
+    margin-top: -0.125rem; }
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-      width: 40px;
-      height: 4px;
+      width: 2.5rem;
+      height: 0.25rem;
       background-color: var(--color-dark);
-      border-radius: 4px;
+      border-radius: 0.25rem;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
@@ -44,9 +44,9 @@
       content: "";
       display: block; }
     .hamburger-inner::before {
-      top: -10px; }
+      top: -0.625rem; }
     .hamburger-inner::after {
-      bottom: -10px; }
+      bottom: -0.625rem; }
 
 //theme emphatic
       .hamburger--emphatic {
@@ -57,7 +57,7 @@
             left: 0;
             transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
           .hamburger--emphatic .hamburger-inner::after {
-            top: 10px;
+            top: 0.625rem;
             right: 0;
             transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
         .hamburger--emphatic.is-active .hamburger-inner {
@@ -65,12 +65,12 @@
           transition-timing-function: ease-out;
           background-color: transparent !important; }
           .hamburger--emphatic.is-active .hamburger-inner::before {
-            left: -80px;
-            top: -80px;
-            transform: translate3d(80px, 80px, 0) rotate(45deg);
+            left: -5rem;
+            top: -5rem;
+            transform: translate3d(5rem, 5rem, 0) rotate(45deg);
             transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
           .hamburger--emphatic.is-active .hamburger-inner::after {
             right: -80px;
             top: -80px;
-            transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+            transform: translate3d(-5rem, 5rem, 0) rotate(-45deg);
             transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
