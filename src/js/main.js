@@ -35,3 +35,15 @@
       item.style.transform=`rotate(${randNumber}deg)`;
     })
   })
+
+  //anchors
+
+  $(function(){
+    $('a[href^="#"]').click(function () {
+        elementID = $(this).attr("href");
+        position = $(elementID).offset().top;
+        $('html, body').animate({scrollTop: position}, 500);
+        
+        return false;
+    });
+});  
