@@ -1,10 +1,16 @@
 .contact{
     min-height: 60vh;
     padding: 5rem 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0.744)), url('../img/road-bg.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0.744)), url('../img/bg-2/bg-2-small.webp');
     background-position: top,center;
     background-repeat: repeat, no-repeat;
     background-size: cover;
+    @include media(728px){
+        background-image: linear-gradient(rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0.744)), url('../img/bg-2/bg-2.webp');
+        background-position: top,center;
+        background-repeat: repeat, no-repeat;
+        background-size: cover; 
+    }
     &__wrap{
         display: flex;
         justify-content: center;

@@ -2,14 +2,14 @@
     position: fixed;
     top: 45%;
     right: 0;
-    width: 30px;
+    width: 1.875rem;
     z-index: 3;
-    min-height: 40px;
+    min-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     @include media(728px){
-        right: 20px;
+        right: 1.25rem;
     }
     &__list{
         display: flex;
@@ -18,17 +18,17 @@
     }
     &__link{
         display: block;
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         background: var(--color-accent-opacity); 
         border-radius: 50%;
-        border: 3px solid rgba(255, 255, 255, 0.727);
-        margin: 7px 0;
+        border: 0.1875rem solid rgba(255, 255, 255, 0.727);
+        margin: 0.4375rem 0;
         cursor: pointer;
         transition: all .6s;
         @include media(728px){
-            width: 16px;
-            height: 16px;
+            width: 1rem;
+            height: 1rem;
         }
         &:hover{
             background: rgb(114, 114, 114); 
