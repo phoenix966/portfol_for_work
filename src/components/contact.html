@@ -2,19 +2,19 @@
     <div class="container contact__container">
         @@include('./main-3.html')
         <div class="contact__wrap">
-            <form class="contact__form">
+            <form class="contact__form" action="./mail.php" method="POST">
                 <div class="contact__wrapper">
-                    <input name="name" id="name" type="text" class="contact__input" placeholder="Напишите свое имя">
+                    <input name="user_name" id="name" type="text" class="contact__input" placeholder="Напишите свое имя">
                 </div>
                 <div class="contact__wrapper">
-                    <input required name="email" id="email" type="email" class="contact__input" placeholder="Напишите свой email">
+                    <input required name="user_email" id="email" type="email" class="contact__input" placeholder="Напишите свой email">
                 </div>
                 <div class="contact__wrapper">
-                    <input required name="phone" id="phone" type="number" class="contact__input" placeholder="Напишите свой номер телефона">
+                    <input required name="user_phone" id="phone" type="number" class="contact__input" placeholder="Напишите свой номер телефона">
                 </div>
-                <textarea name="text" id="text" class="contact__text-area" placeholder="Напишите свое сообщение..."></textarea>
+                <textarea name="user_text" id="text" class="contact__text-area" placeholder="Напишите свое сообщение..."></textarea>
                 <div class="contact__row">
-                    <button class="contact__btn btn">Отправить</button>
+                    <button type="submit" class="contact__btn btn">Отправить</button>
                 </div>
             </form>
         </div>

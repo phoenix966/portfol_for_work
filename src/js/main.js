@@ -1,4 +1,5 @@
 //=require ../../node_modules/jquery/dist/jquery.js
+//=require ./libs/aos.js
 
   let hamburger = document.querySelector(".hamburger");
   let mobile = document.querySelector(".mobile");
@@ -47,3 +48,5 @@
         return false;
     });
 });  
+
+AOS.init();
