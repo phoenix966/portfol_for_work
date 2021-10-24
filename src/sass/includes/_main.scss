@@ -31,4 +31,10 @@
             color: var(--color-text-light);
         }
     }
+    &__text--ok{
+        color: #00f359;
+      }
+    &__text--fail{
+        color: rgb(243, 9, 9);
+      }
 }

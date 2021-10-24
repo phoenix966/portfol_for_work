@@ -80,6 +80,7 @@ function downloadGoogleFonts () {
             fontsDir: '../fonts/googleFonts',
             cssDir: '../sass/includes',
             cssFilename: '_myGoogleFonts.scss',
+            format: 'ttf'
         }))
         .pipe(gulp.dest('src/fonts/'))
 }
