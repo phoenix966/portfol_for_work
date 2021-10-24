@@ -33,7 +33,7 @@ const path = {
         otherImg: ['src/img/**/*.*','!src/img/**/*.{jpg,png,jpeg,Jpg,Png,Jpeg,JPG,PNG,JPEG,tiff,webp,db}'],
         fonts: 'src/fonts/**/*.*',
         ttf: 'src/fonts/**/*.ttf',
-        otherFonts:'src/fonts/**/*.woff',
+        otherFonts:'src/fonts/**/*.{woff,woff2}',
         iconfont: 'src/fonts/generateIcon(dontREMOVE)/**/*.svg'
     },
     build:{

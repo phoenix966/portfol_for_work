@@ -59,10 +59,14 @@
     &__link{
         text-decoration: none;
         color: #fff;
-        padding: 0.625rem 1.25rem;
+        padding: 0.3125rem 0.625rem;
         background: rgba(0, 0, 0, 0.692);
         border-radius: 0.3125rem;
         transition: 0.7s;
+        margin: 0 5px;
+        @include media(728px){
+            padding: 0.625rem 1.25rem; 
+        }
         &:hover{
             background: rgba(59, 59, 59, 0.829);
             color: var(--color-accent);

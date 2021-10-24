@@ -120,27 +120,33 @@ $content = [
 $catalog = [
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#'
+        'link' => '#',
+        'browse__link' => ''
     ]
 ];
 

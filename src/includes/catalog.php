@@ -11,6 +11,7 @@
                                 <img src="${item['img']}" alt="image" class="catalog__img">
                                 <div class="catalog__overlay">
                                     <a href="${item['link']}" class="catalog__link icon-link"></a>
+                                    <a href="${item['browse__link']}" class="catalog__link icon-zoom"></a>
                                 </div>
                                 <div class="catalog__pin">
                                     <img src="./img/pin.webp" alt="pin" class="catalog__img">
