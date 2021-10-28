@@ -1,7 +1,10 @@
 <?php
     $path_ru = './config/config_ru.php';
     $path_eng = './config/config_eng.php';
-    $path = $_GET['lang'] == 'ru' ?  $path_ru : $path_eng;
+    $path = $path_eng;
+    if(isset($_GET['lang'])){
+         $path = $_GET['lang'] == 'ru' ?  $path_ru : $path_eng;
+    }
     require $path;
 ?>
 <!DOCTYPE html>
