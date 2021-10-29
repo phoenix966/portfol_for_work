@@ -1,4 +1,4 @@
-<footer class="footer" id="footer">
+<footer class="footer">
     <div class="container footer__container">
         <ul class="footer__wrap list--reset">
             <li class="footer__col">

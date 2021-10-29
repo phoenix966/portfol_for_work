@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container contact__container">
         <?php 
             include './includes/main-3.php';
