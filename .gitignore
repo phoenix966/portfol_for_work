@@ -3,3 +3,4 @@ build
 ReadMe.txt
 **/*.db
 **/mail.php
+**/vendor

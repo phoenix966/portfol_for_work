@@ -26,22 +26,27 @@ const path = {
         root: 'src',
         html: ['src/**/*.html', '!src/components/**/*.html'],
         allHtml: 'src/**/*.html',
-        php: ['src/**/*.php', '!src/components/**/*.{php,html}'],
+        php: ['src/**/*.php', '!src/components/**/*.{php,html}','!src/vendor/**/*.*'],
         sass: 'src/sass/**/*.{sass,scss}',
         js: 'src/js/main.js',
         img: 'src/img/**/*.{jpg,png,jpeg,Jpg,Png,Jpeg,JPG,PNG,JPEG,tiff,webp}',
         otherImg: ['src/img/**/*.*','!src/img/**/*.{jpg,png,jpeg,Jpg,Png,Jpeg,JPG,PNG,JPEG,tiff,webp,db}'],
         fonts: 'src/fonts/**/*.*',
-        ttf: 'src/fonts/**/*.ttf',
-        otherFonts:'src/fonts/**/*.{woff,woff2}',
-        iconfont: 'src/fonts/generateIcon(dontREMOVE)/**/*.svg'
+        ttf: ['src/fonts/**/*.ttf','!src/fonts/icomoon/**/*.*'],
+        otherFonts:['src/fonts/**/*.{woff,woff2}','!src/fonts/icomoon/**/*.*'],
+        iconfont: 'src/fonts/generateIcon(dontREMOVE)/**/*.svg',
+        composer: ['src/composer.{json,lock}'],
+        vendor: 'src/vendor/**/*.*',
+        icomoon: 'src/fonts/icomoon/**/*.*'
     },
     build:{
         root: 'build',
         css: 'build/css',
         js: 'build/js',
         img: 'build/img',
-        ttf: 'build/fonts'
+        ttf: 'build/fonts',
+        vendor: 'build/vendor',
+        icomoon: 'build/fonts/icomoon'
     }
 }
 
@@ -49,6 +54,20 @@ const path = {
 
 async function clean() {
     return await del.sync(path.build.root);
+}
+
+function moveComposer (){
+    return gulp.src(path.dev.composer)
+    .pipe(gulp.dest(path.build.root))
+}
+function moveVendor (){
+    return gulp.src(path.dev.vendor)
+    .pipe(gulp.dest(path.build.vendor))
+}
+
+function moveIcomoon (){
+    return gulp.src(path.dev.icomoon)
+    .pipe(gulp.dest(path.build.icomoon))
 }
 
 function liveReload(done){  // BrowserSync live server - ip notebook:8080
@@ -114,6 +133,8 @@ function movePhp (){
       .pipe(gulp.dest(path.build.root)) // положи в папку 'build'
  }
 
+
+
 function styles (){
     return gulp.src(path.dev.sass)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")})) // возвращает и уведомляет при ошибках можно исп в любом месте
@@ -173,6 +194,9 @@ function watcher(done) { // следит за изменениями, колбэ
     gulp.watch(path.dev.img, images)
     gulp.watch(path.dev.otherImg,moveOtherImg)
     gulp.watch(path.dev.otherFonts,moveOtherFonts)
+    gulp.watch(path.dev.composer,moveComposer)
+    gulp.watch(path.dev.vendor,moveVendor),
+    gulp.watch(path.dev.icomoon,moveIcomoon)
 
     done(); // возвр результат вместо return исп в том случае если функция ничего не возвращает иначе будет ошибка
 }
@@ -192,6 +216,11 @@ exports.moveOtherImg = moveOtherImg;
 exports.downloadGoogleFonts = downloadGoogleFonts;
 exports.moveOtherFonts = moveOtherFonts;
 
+exports.moveComposer = moveComposer;
+exports.moveVendor = moveVendor;
+
+exports.moveIcomoon = moveIcomoon;
+
 exports.devHtml = gulp.series( //dev основной экспорт создает запуск всех задач одной командой (gulp) запуск задач последовательный
     clean,
     gulp.parallel( //dev запуск задач паралельный
@@ -202,6 +231,7 @@ exports.devHtml = gulp.series( //dev основной экспорт созда�
         images,
         moveOtherImg,
         moveOtherFonts,
+        moveIcomoon
     ),
     liveReload,
     watcher
@@ -218,6 +248,7 @@ exports.buildHtml = gulp.series( //build final основной экспорт �
         images,
         moveOtherImg,
         moveOtherFonts,
+        moveIcomoon
     ),
     
 );
@@ -231,7 +262,10 @@ exports.devPhp = gulp.series( //dev основной экспорт создае
         fonts2woff,
         images,
         moveOtherImg,
-        moveOtherFonts
+        moveOtherFonts,
+        moveComposer,
+        moveVendor,
+        moveIcomoon
     ),
     watcher
 );
@@ -246,6 +280,9 @@ exports.buildPhp = gulp.series( //build final основной экспорт с
         fonts2woff2,
         images,
         moveOtherImg,
-        moveOtherFonts
+        moveOtherFonts,
+        moveVendor,
+        moveComposer,
+        moveIcomoon
     )
 );
