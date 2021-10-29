@@ -13,8 +13,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Author" content="Дылевский Юрий Игоревич"> 
+    <meta name="Copyright" content="Дылевский Юрий Игоревич">
+    <meta name="Address" content="stranger354999@gmail.com">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Main</title>
+    <title>Portfolio main page</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
