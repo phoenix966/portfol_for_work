@@ -23,7 +23,7 @@ $navbar = [
     ],
     'item_2' => [
         'text' => 'Резюме',
-        'link' => './index.php'
+        'link' => 'https://docs.google.com/document/d/1VyyjftUXCgm92_qZubSM_NIm2WzGtbqq/edit?usp=sharing&ouid=108775992237754916477&rtpof=true&sd=true'
     ],
     'item_3' => [
         'text' => 'MyNote',
@@ -135,9 +135,9 @@ $catalog = [
         'browse__link' => 'https://note.portfol.ru/index.php'
     ],
     [
-        'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => null,
-        'browse__link' => ''
+        'img' => './img/preview/portfol-preview.webp',
+        'link' => '#',
+        'browse__link' => 'https://github.com/phoenix966/portfol_for_work'
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
