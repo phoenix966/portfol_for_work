@@ -55,6 +55,9 @@
         visibility: hidden;
         background: linear-gradient(319deg, rgba(107, 238, 227, 0.678) 34%, rgba(255, 255, 255, 0.451) 54%, rgba(19, 228, 207, 0.489) 66%, rgba(255, 255, 255, 0.432) 79%); 
         transition: all .7s;
+        &--hide{
+            display: none;
+        }
     }
     &__link{
         text-decoration: none;
@@ -64,6 +67,9 @@
         border-radius: 0.3125rem;
         transition: 0.7s;
         margin: 0 5px;
+        &--hide{
+            display: none;
+        }
         @include media(728px){
             padding: 0.625rem 1.25rem; 
         }

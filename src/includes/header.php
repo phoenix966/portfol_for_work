@@ -12,7 +12,7 @@
             <ul class="nav list--reset ">
                 <li class="nav__item"><a href="<?php echo $navbar['item_1']['link']; ?>" class="nav__link"><?php echo $navbar['item_1']['text']; ?></a></li>
                 <li class="nav__item"><a href="<?php echo $navbar['item_2']['link']; ?>" class="nav__link"><?php echo $navbar['item_2']['text']; ?></a></li>
-                <li class="nav__item"><a href="<?php echo $navbar['item_3']['link']; ?>" class="nav__link"><?php echo $navbar['item_3']['text']; ?></a></li>
+                <li class="nav__item"><a target="blank" href="<?php echo $navbar['item_3']['link']; ?>" class="nav__link"><?php echo $navbar['item_3']['text']; ?></a></li>
             </ul>              
         </div>
         <div class="header__wrap header__wrap--hide">

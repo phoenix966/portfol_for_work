@@ -19,14 +19,14 @@
   let catalogPin = document.querySelectorAll('.catalog__pin');
 
   let randomNumbers = (min,max) =>{
-    let randNumber = Math.floor(Math.random()* (max - min) + min);
+    let randNumber = Math.floor(Math.random() * (max - min) + min);
     return randNumber;
   }
 
   catalogItem.forEach((item,index)=>{
     let randNumber = randomNumbers(-5,5)
     let min = 10;
-    let color = randomNumbers(1,27) * min;
+    let color = randomNumbers(1,20) * min;
     item.style.transform=`rotate(${randNumber}deg)`;
     catalogPin[index].style.filter=`hue-rotate(${color}deg)`;
     item.addEventListener('mouseover',()=>{

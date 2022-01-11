@@ -27,7 +27,7 @@ $navbar = [
     ],
     'item_3' => [
         'text' => 'MyNote',
-        'link' => './index.php'
+        'link' => 'https://note.portfol.ru/index.php'
     ],
 
 ];
@@ -37,7 +37,7 @@ $info = [
     'text' => 'at the beginning of your journey',
     'btn' => [
         'text' => 'GitHub',
-        'link' => 'https://github.com/phoenix966/my_portfolio'
+        'link' => 'https://github.com/phoenix966'
     ]
 ];
 
@@ -98,7 +98,7 @@ $content = [
     ],
     [
         'icon' => 'icon-php',
-        'text' => 'Gulp',
+        'text' => 'Php',
         'star-1' => 'icon-star-full',
         'star-2' => 'icon-star-empty',
         'star-3' => 'icon-star-empty',
@@ -119,33 +119,33 @@ $content = [
 
 $catalog = [
     [
-        'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
+        'img' => './img/preview/voila-preview.webp',
+        'link' => 'https://github.com/phoenix966/Voila_maket',
+        'browse__link' => 'https://phoenix966.github.io/Voila_maket/build/index.html'
+    ],
+    [
+        'img' => './img/preview/gulp-preview.webp',
+        'link' => 'https://github.com/phoenix966/my_gulp',
+        'browse__link' => false
+    ],
+    [
+        'img' => './img/preview/my_note-preview.webp',
+        'link' => 'https://github.com/phoenix966/my_note',
+        'browse__link' => 'https://note.portfol.ru/index.php'
+    ],
+    [
+        'img' => './img/preview/portfol-preview.webp',
+        'link' => null,
         'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
+        'link' => null,
         'browse__link' => ''
     ],
     [
         'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
-        'browse__link' => ''
-    ],
-    [
-        'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
-        'browse__link' => ''
-    ],
-    [
-        'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
-        'browse__link' => ''
-    ],
-    [
-        'img' => './img/bg-1/bg-1-test-small.webp',
-        'link' => '#',
+        'link' => null,
         'browse__link' => ''
     ]
 ];
@@ -179,11 +179,11 @@ $contact = [
 ];
 
 $footer = [
-    'phone' => '0556 355 004',
+    'phone' => '0556 355 004 / 0701 354 999',
     'made' => ' Made in 2021',
     'links' => [
         'github' => 'https://github.com/phoenix966/',
-        'whats_up' => '',
-        'telegram' => ''
+        'whats_up' => 'https://wa.me/996556355004',
+        'telegram' => 'https://t.me/uridilew'
     ]
 ];
